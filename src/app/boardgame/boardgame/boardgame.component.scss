@@ -1,9 +1,13 @@
 .board {
   background-color: rgb(104, 104, 104);
   height: 700px;
-  width: 700px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .mundo {
   color: blue;
 }
+
