@@ -10,6 +10,6 @@ import { BoxComponent } from './box/box.component';
   imports: [
     CommonModule
   ],
-  exports: [BoardgameComponent]
+  exports: [BoardgameComponent, BoxComponent]
 })
 export class BoardgameModule { }

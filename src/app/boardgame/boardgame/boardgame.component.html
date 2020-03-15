@@ -1,14 +1,11 @@
 <div class="board">
-
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-
+  <table class="tableResponsive">
+    <tbody>
+      <tr *ngFor="let rows of [1,2,3,4,5,6,7,8]">
+        <td *ngFor="let columns of [0,1,2,3,4,5,6,7,8]">
+          <app-box ></app-box>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

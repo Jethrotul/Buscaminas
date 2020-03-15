@@ -1,13 +1,19 @@
 .board {
-  background-color: rgb(104, 104, 104);
-  height: 700px;
-  width: 1000px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
 }
 
-.mundo {
-  color: blue;
+table {
+  margin: auto;
 }
 
+td {
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .board {
+    width: 100%;
+  }
+}

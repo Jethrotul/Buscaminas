@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-box',
   templateUrl: './box.component.html',
@@ -7,19 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxComponent implements OnInit {
   randomizeBomb = Math.random();
+  isClicked = false;
+  isBomb: boolean;
+  boxstyle = 'box-style';
 
-  flipbox() {
-    const isClicked = true;
-    console.log(this.randomizeBomb);
-    if (this.randomizeBomb >= 0.8) {
-      console.log('Bomb');
+  public clickbox() {
+
+    if (this.randomizeBomb >= 0.8 ) {
+      this.isClicked = true;
+      console.log(this.randomizeBomb);
+      return this.isBomb = true,
+            this.isClicked = true,
+            this.boxstyle = 'box-mine';
+
     } else {
-      console.log('Safe');
+      this.isClicked = true;
+      console.log(this.randomizeBomb);
+      return this.isBomb = false,
+            this.isClicked = true,
+            this.boxstyle = 'box-safe';
     }
   }
   constructor() {
-    const isClicked: boolean = false;
-
   }
 
   ngOnInit(): void {}
